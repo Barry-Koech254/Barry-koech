@@ -112,7 +112,7 @@ section {
 }
 
 .home-img img {
-    width: 35vw;
+    width: 30vw;
     border-radius: 10rem;
     box-shadow: 0 0 2rem rebeccapurple;
     animation: floatImage 4s ease-in-out infinite;
@@ -219,7 +219,7 @@ span {
 }
 
 .about-img img {
-    width: 35vw;
+    width: 32vw;
     border-radius: 10rem;
     box-shadow: 0 0 2rem rebeccapurple;
 }
