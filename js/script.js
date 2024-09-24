@@ -105,15 +105,15 @@ function sendEmail() {
       }
       */
 
-      function clickingShow(){
-        
-        var human;
-        human = window.confirm(
-          "Please confirm you are human!"
-        );
-        if (human) window.alert("Welcome! to our wedsite");
-        else
-          window.alert(
-            "You can not visit here unless you are a human."
-          );
-      }
+      function clickingShow(event) {
+        var human = window.confirm("Please confirm you are human!");
+     
+        if (human) {
+          window.alert("Welcome! to our website");
+          return true;  // Allows the link to be followed
+        } else {
+          window.alert("You cannot visit here unless you are a human.");
+          event.preventDefault();  // Prevents the link from being followed
+          return false; // Ensures no further action is taken
+        }
+     }
