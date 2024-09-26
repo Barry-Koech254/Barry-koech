@@ -12,6 +12,19 @@ let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
 window.onscroll = () => {
+
+  let progressBar = document.getElementById('progress-bar');
+  
+  // Calculate the height of the page and how much has been scrolled
+  let pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+  let scrollPosition = window.scrollY;
+
+  // Calculate the width of the progress bar as a percentage
+  let scrollPercentage = (scrollPosition / pageHeight) * 100;
+  
+  // Set the progress bar width
+  progressBar.style.width = scrollPercentage + '%';
+
     sections.forEach(sec => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 150;
