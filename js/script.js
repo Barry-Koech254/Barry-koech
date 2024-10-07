@@ -130,3 +130,19 @@ function sendEmail() {
           return false; // Ensures no further action is taken
         }
      }
+
+     // Get the currentyear
+const year = new Date().getFullYear();
+  
+// Set the year in the footer
+document.getElementById("year").textContent = year;
+
+// Get the last modified date of the document
+const lastModified = new Date(document.lastModified);
+
+// Format the date (for example: October 7, 2024, 08:45 AM)
+const options = { year: 'numeric', month: 'long', day: 'numeric' };
+const formattedDate = lastModified.toLocaleDateString('en-US', options);
+
+// Set the last updated date in the footer
+document.getElementById("last-updated").textContent = formattedDate;

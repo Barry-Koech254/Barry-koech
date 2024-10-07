@@ -517,6 +517,9 @@ span {
     color: rgb(162, 255, 0);
     text-decoration: none;
 }
+.footer-text .spans{
+    color: rgb(162, 255, 0);
+}
 
 .footer-iconTop a {
     display: inline-flex;
