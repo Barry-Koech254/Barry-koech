@@ -131,18 +131,30 @@ function sendEmail() {
         }
      }
 
-     // Get the currentyear
-const year = new Date().getFullYear();
+//      // Get the currentyear
+// const year = new Date().getFullYear();
   
-// Set the year in the footer
-document.getElementById("year").textContent = year;
+// // Set the year in the footer
+// document.getElementById("year").textContent = year;
 
-// Get the last modified date of the document
-const lastModified = new Date(document.lastModified);
+// // Get the last modified date of the document
+// const lastModified = new Date(document.lastModified);
 
-// Format the date (for example: October 7, 2024, 08:45 AM)
-const options = { year: 'numeric', month: 'long', day: 'numeric' };
-const formattedDate = lastModified.toLocaleDateString('en-US', options);
+// // Format the date (for example: October 7, 2024, 08:45 AM)
+// const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+// const formattedDate = lastModified.toLocaleDateString('en-US', options);
 
-// Set the last updated date in the footer
-document.getElementById("last-updated").textContent = formattedDate;
+// // Set the last updated date in the footer
+// document.getElementById("last-updated").textContent = formattedDate;
+
+// List of emojis
+const emojis = ["💖", "💥", "🥰", "🐇", "🌹", "✨", "🦄", "💞"];
+let currentIndex = 0;
+
+// Function to change the emoji every 500 milliseconds (0.5 seconds)
+setInterval(() => {
+    // Update the emoji content
+    document.getElementById("emoji").innerHTML = emojis[currentIndex];
+    // Move to the next emoji in the list, loop back if needed
+    currentIndex = (currentIndex + 1) % emojis.length;
+}, 1000);  // Change emoji every 500 milliseconds
