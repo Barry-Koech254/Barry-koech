@@ -87,6 +87,42 @@ section {
         color: blue;
     }
 }
+
+
+  
+/* Small logo inside header */
+.logo-img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Floating logo container */
+  .floating-big-logo {
+    position: fixed;
+    top: 32%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 9999;
+    display: none;
+    padding: 0;
+    background-color: rgb(148, 241, 8);
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgb(6, 125, 131);
+  }
+  
+  /* Logo image inside floating container */
+  .floating-big-logo img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  
+  
+
 .navbar a{
     font-size: 2rem;
     color: var(--text-color);
@@ -186,6 +222,7 @@ span {
 }
 .home-content p {
     font-size: 1.6rem;
+    margin-right: 10px;
 }
 
 .social-icons a {
@@ -339,7 +376,7 @@ span {
     cursor: pointer;
 }
 .portfolio {
-    background: url('background3.jpg') no-repeat;
+    background: url('banners.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -568,6 +605,9 @@ span {
         padding: 10rem 3% 2rem;
     }
     
+    .home-content p{
+        margin-right: 30px;
+    }
     .services {
         padding-bottom: 7rem;
     }

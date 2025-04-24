@@ -43,3 +43,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Logo image design
+
+const logo = document.querySelector('.logo-img');
+const floatingLogo = document.getElementById('floating-big-logo');
+
+logo.addEventListener('mouseenter', () => {
+  floatingLogo.style.display = 'block';
+});
+
+logo.addEventListener('mouseleave', () => {
+  setTimeout(() => {
+    if (!floatingLogo.matches(':hover')) {
+      floatingLogo.style.display = 'none';
+    }
+  }, 200);
+});
+
+floatingLogo.addEventListener('mouseleave', () => {
+  floatingLogo.style.display = 'none';
+});
+

@@ -79,6 +79,36 @@
         }
     }
 
+    /* Small logo inside header */
+.logo-img {
+  width: 70px;
+  height: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Floating logo container */
+.floating-big-logo {
+  position: fixed;
+  top: 32%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 9999;
+  display: none;
+  padding: 0;
+  background-color: rgb(148, 241, 8);
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgb(6, 125, 131);
+}
+
+/* Logo image inside floating container */
+.floating-big-logo img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
       .spans,
       .tab-contents ul li .social {
         color: #ff004f;
