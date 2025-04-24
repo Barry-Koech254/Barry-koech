@@ -52,7 +52,7 @@ section {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: linear-gradient( rgba(1, 1, 1, 1), var(--main-color), black);
+    background: linear-gradient( rgba(1, 1, 1, 0.713), rgba(31, 197, 6, 0.853), rgba(0, 0, 0, 0.941));
     display: flex;
     justify-content: space-between;
     align-items: center;
