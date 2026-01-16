@@ -628,6 +628,7 @@ span {
     #menu-icon {
         display: block;
         color: red;
+        margin-right: 4rem;
     }
 
     .navbar {
@@ -669,9 +670,15 @@ span {
         bottom: 0;
         transition: 0.5s ease-in-out;
       }
+    section{
+        padding-right: 1.5rem;
+    }
 
     .home {
         flex-direction: column;
+    }
+    .home-content {
+        margin-top: 2rem;
     }
 
     .home-content h3 {
@@ -706,6 +713,14 @@ span {
 }
 
 @media (max-width: 617px) {
+    .home-content {
+        margin-top: 3.5rem;
+    }
+
+    #menu-icon {
+        margin-right: 3rem;
+    }
+
     .portfolio-container {
         grid-template-columns: 1fr;
     }
@@ -714,6 +729,15 @@ span {
     html {
         font-size: 50%;
     }
+
+    .home-content {
+        margin-top: 3rem;
+    }
+
+    #menu-icon {
+        margin-right: 2rem;
+    }
+
 
     .contact form .input-box input {
         width: 100%;
@@ -724,6 +748,11 @@ span {
     .home-img img {
         width: 90vw;
     }
+
+    #menu-icon {
+        margin-right: 1rem;
+    }
+
 
     .about-img img {
         width: 90vw;   
