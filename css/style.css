@@ -625,6 +625,12 @@ span {
 }
 
 @media (max-width: 768px) {
+    .header {
+        top: 0;
+        left: 0;
+        width: 99%;
+    }
+
     #menu-icon {
         display: block;
         color: red;
@@ -670,9 +676,6 @@ span {
         bottom: 0;
         transition: 0.5s ease-in-out;
       }
-    section{
-        padding-right: 1.5rem;
-    }
 
     .home {
         flex-direction: column;
@@ -717,6 +720,12 @@ span {
         margin-top: 3.5rem;
     }
 
+    .header {
+        top: 0;
+        left: 0;
+        width: 99%;
+    }
+
     #menu-icon {
         margin-right: 4rem;
     }
@@ -734,6 +743,11 @@ span {
         margin-top: 3rem;
     }
 
+    .header {
+        top: 0;
+        left: 0;
+        width: 99%;
+    }
     #menu-icon {
         margin-right: 4rem;
     }
@@ -752,7 +766,11 @@ span {
     #menu-icon {
         margin-right: 1rem;
     }
-
+    .header {
+        top: 0;
+        left: 0;
+        width: 99%;
+    }
 
     .about-img img {
         width: 90vw;   
